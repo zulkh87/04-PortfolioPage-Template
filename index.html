@@ -27,6 +27,19 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <header class="logo-visibility-toggle-bar">
+        <a href="#" class="logo">
+            <img src="./utility/images/Logo_dark.png" width="145px" height="32px" class="dark" alt="logo image dark">
+            <img src="./utility/images/Logo_light.png" width="145px" height="32px" class="light" alt="logo image light">
+        </a>
+        <button class="icon-btn theme-btn" data-theme-btn>
+            <span class="material-symbols-outlined dark" aria-hidden="true">dark_mode</span>
+            <span class="material-symbols-outlined light" aria-hidden="true">light_mode</span>
+
+            <div class="state-layer"></div>
+        </button>
+    </header>
+
     <script src="./js/script.js"></script>
   </body>
 </html>
