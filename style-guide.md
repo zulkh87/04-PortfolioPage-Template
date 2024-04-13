@@ -2,33 +2,46 @@
 
 ## Html import links
 
-Google font
-
-``` html
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500&display=swap"
-  rel="stylesheet">
-```
-
 Material icon
-
-``` html
+```html
 <link rel="stylesheet"
 href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 ```
 
----
+
 
 ## CSS Variables
 
+### Typhography
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Whisper&display=swap" rel="stylesheet">
+```
+
+```css
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.urbanist-<uniquifier> {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.whisper-regular {
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+```
+
+
+
 ### Colors
 
-``` css
---white: hsl(0, 0%, 100%);
---black: hsl(0, 0%, 0);
-```
 
 Dark colors
 
@@ -65,13 +78,6 @@ Light colors
 ```
 
 ### Typography
-
-Font family
-
-``` css
---font-primary: 'Open Sans', sans-serif;
---font-secondary: 'Noto Sans', sans-serif;
-```
 
 Font size
 
