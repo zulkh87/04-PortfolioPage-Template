@@ -509,6 +509,8 @@ img-holder {
   background-color: var(--surface-container-low);
   border-radius: 17px;
   padding: 16px;
+  display: grid;
+  gap: 16px;
   --state-layer-bg: var(--on-surface);
 }
 
